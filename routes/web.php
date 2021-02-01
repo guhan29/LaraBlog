@@ -25,3 +25,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts');
 Route::post('/posts', [PostController::class, 'create'])->name('posts');
+Route::get('/posts/{post}/show', [PostController::class, 'show'])->name('posts.show');
